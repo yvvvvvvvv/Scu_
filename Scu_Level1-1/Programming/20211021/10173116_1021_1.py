@@ -1,0 +1,12 @@
+a=int(input('請輸入圓半徑:'))
+b=a**2*3.1416
+x1=open('practice1.txt',mode='w')
+print('/半徑{0:3d}園面積是{1:10.2f}/'.format(a,b),file=x1)
+print('/半徑{0:3d}園面積是{1:>10.2f}/'.format(a,b),file=x1)
+print('/半徑{0:<3d}園面積是{1:<10.2f}/'.format(a,b),file=x1)
+print('/半徑{0:^3d}園面積是{1:^10.2f}/'.format(a,b),file=x1)
+print('/半徑{0:3d}園面積是{1:10.2f}/'.format(a,b))
+print('/半徑{0:3d}園面積是{1:>10.2f}/'.format(a,b))
+print('/半徑{0:<3d}園面積是{1:<10.2f}/'.format(a,b))
+print('/半徑{0:^3d}園面積是{1:^10.2f}/'.format(a,b))
+print('寫入檔案成功')
