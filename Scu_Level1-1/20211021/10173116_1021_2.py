@@ -1,0 +1,7 @@
+n1=input('請輸入姓:')
+n2=input('請輸入名:')
+n3=input('請輸入英文成績:')
+n4=input('請輸入數學成績:')
+n5=int(n3)+int(n4)
+print('{0}{1:<4}歡迎使用本系統'.format(n1,n2))
+print('{0}{1:<4}你的總分是{2:4}'.format(n1,n2,n5))

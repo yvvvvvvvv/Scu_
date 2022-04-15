@@ -1,0 +1,15 @@
+a=123
+print(a==123)
+x='123'
+print('%s'%x)
+a=13
+b=6
+print(a/b)
+print(a//b)
+print(a%b)
+print(divmod(a,b))
+s,v=divmod(a,b)
+print(s)
+print(v)
+c=divmod(a,b)
+print(type(c))
