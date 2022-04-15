@@ -1,0 +1,17 @@
+x=eval(input('請輸入要計算的第一個數:'))
+x1=eval(input('請輸入要計算的第二個數:'))
+x2=input('請輸入運算符號(加減乘除):')
+if(x2=='+'):
+    y=x+x1
+    print('計算結果{}'.format(y))
+elif(x2=='-'):
+    y=x-x1
+    print('計算結果{}'.format(y))
+elif(x2=='*'):
+    y=x*x1
+    print('計算結果{}'.format(y))
+elif(x2=='/'):
+    y=x/x1
+    print('計算結果{}'.format(y))
+else:
+    print("只能輸入加減符號，請重新輸入")

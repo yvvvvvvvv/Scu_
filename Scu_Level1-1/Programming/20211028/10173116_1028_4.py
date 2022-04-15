@@ -1,0 +1,16 @@
+a=input('輸入三個整數:')
+b=eval(a)
+x,y,z=b
+if(x>y):
+    c=x
+    x=y
+    y=c
+if(x>z):
+    t=z
+    z=x
+    x=t
+if(y>z):
+    s=y
+    y=z
+    z=s
+print("由小到大:%d%d%d"%(x,y,z))
