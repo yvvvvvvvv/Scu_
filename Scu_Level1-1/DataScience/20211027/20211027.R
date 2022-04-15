@@ -1,0 +1,5 @@
+install.packages('quantmod')
+library(quantmod)
+getSymbols('AAPL',src='yahoo')
+tail(AAPL)
+typeof(AAPL)
