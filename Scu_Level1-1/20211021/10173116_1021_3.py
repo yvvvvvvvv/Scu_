@@ -1,5 +1,0 @@
-a=int(input('請輸入華氏溫度:'))
-攝氏溫度=int((a-32)*5/9)
-print('華氏 {} 等於攝氏 {}'.format(a,攝氏溫度))
-x1=open('degree1.txt',mode='w')
-print('華氏 {} 等於攝氏 {}'.format(a,攝氏溫度),file=x1)
