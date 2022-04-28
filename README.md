@@ -1,2 +1,3 @@
 # Scu_
-Big Data Management Department
+School of Big Data Management 
+Department of Data Science
