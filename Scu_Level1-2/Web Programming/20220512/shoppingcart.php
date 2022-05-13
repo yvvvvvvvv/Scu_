@@ -76,7 +76,7 @@ while (list($arr,$value)=each($_COOKIE)) {
             <i class="minus iconfont icon-subtract"></i>
             <input type="number" min="1" step="1" value='.$quantity.'>
             <i class="plus iconfont icon-jiahao"></i>
-        </div>'.'</td>';
+        </div>'.'</td>'; //這個暫時還有問題 可以更改但更改後數字無法讀取
         $total=$total+$price*$quantity;
         echo '</tr>';
     }
