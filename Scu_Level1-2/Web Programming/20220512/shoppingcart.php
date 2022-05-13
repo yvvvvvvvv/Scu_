@@ -71,7 +71,12 @@ while (list($arr,$value)=each($_COOKIE)) {
             if ($name == 'Quantity') $quantity=$value;
             if ($name == 'Name') $pname=$value;
         }
-        echo '<td>'.$arr.'</td><td>'.$pname.'</td><td>'.$price.'</td><td>'.$quantity.'</td>';
+        echo '<td>'.$arr.'</td><td>'.$pname.'</td><td>'.$price.'</td><td>'.
+        '<div class="purchasenum mt25">
+            <i class="minus iconfont icon-subtract"></i>
+            <input type="number" min="1" step="1" value='.$quantity.'>
+            <i class="plus iconfont icon-jiahao"></i>
+        </div>'.'</td>';
         $total=$total+$price*$quantity;
         echo '</tr>';
     }
