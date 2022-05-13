@@ -18,30 +18,6 @@ function each(&$array) {
     return $res;
 }
 ?>
-<script>
-/*
-$(function(){
-	var t = $("#quantity");
-	$("#add").click(function(){
-		t.val(parseInt(t.val())+1);
-		$("#min").removeAttr("disabled");                 //當按加1時，解除$("#min")不可讀狀態
-		setTotal();
-	})
-	$("#min").click(function(){
-               if (parseInt(t.val())>1) {                     //判斷數量值大於1時才可以減少
-                t.val(parseInt(t.val())-1)
-                }else{
-                $("#min").attr("disabled","disabled")        //當$("#min")為1時，$("#min")不可讀狀態
-               }
-		setTotal();
-	})
-	function setTotal(){
-		$("#total").html((parseInt(t.val())*3.95).toFixed(2));
-	}
-	setTotal();
-})
-*/
-</script>
 </head>
 <body bgcolor="C4E1FF" text='408080'>
 <table border='0'>
@@ -97,16 +73,15 @@ while (list($arr,$value)=each($_COOKIE)) {
         }
         echo '<td>'.$arr.'</td><td>'.$pname.'</td><td>'.$price.'</td><td>'.
         '<form ation="shoppingcart.php" method="post">
-            <input type="number" name="qq" min="1" step="1" value='.$quantity.'>
+            <input type="number" name="'.$arr.'" min="1" step="1" value='.$quantity.'>
         <input type="submit" value="變更">
         </form>'.'</td>';
         //foreach($_POST["qu"][0] as $v)  {
         //    echo 'hello!!'.$v;
         //}
-        session_start();
-        if (isset($_POST['qq'])) {
-        $_SESSION['Quantity']=$_POST['qq'];
-        $quantity=$_POST['qq'];
+        if (isset($_POST[$arr])) {
+        $_SESSION['Quantity']=$_POST[$arr];
+        $quantity=$_POST[$arr];
         setcookie($arr.'[Quantity]',$quantity,time()+3600);
         $total=$total+$price*$quantity;
         /*echo '<td>'.$arr.'</td><td>'.$pname.'</td><td>'.$price.'</td><td>'.
