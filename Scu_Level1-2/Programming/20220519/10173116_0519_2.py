@@ -1,0 +1,22 @@
+from tkinter import *
+
+w = Tk()
+w.title('a')
+a1 = Label(w, text='標籤1', relief=RAISED)
+a2 = Label(w, text='標籤2', relief=RAISED)
+a3 = Label(w, text='標籤3', relief=RAISED)
+a4 = Label(w, text='標籤4', relief=RAISED)
+a5 = Label(w, text='標籤5', relief=RAISED)
+a6 = Label(w, text='標籤6', relief=RAISED)
+a7 = Label(w, text='標籤7', relief=RAISED)
+a8 = Label(w, text='標籤8', relief=RAISED)
+a1.grid(row=0, column=0, rowspan=2)
+a2.grid(row=0, column=1)
+a3.grid(row=0, column=2, rowspan=3)
+a4.grid(row=0, column=3)
+#a5.grid(row=1, column=0)
+a6.grid(row=1, column=1)
+#a7.grid(row=1, column=2)
+a8.grid(row=1, column=3)
+
+w.mainloop()
